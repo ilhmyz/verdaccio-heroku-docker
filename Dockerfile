@@ -1,4 +1,4 @@
-FROM verdaccio/verdaccio:3.12.3
+FROM verdaccio/verdaccio
 
 USER root
 
@@ -9,3 +9,4 @@ RUN yarn && yarn add verdaccio-github-oauth-ui
 COPY ./config.yaml /verdaccio/conf
 
 USER verdaccio
+
